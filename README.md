@@ -1,2 +1,2 @@
 # workshop1PrincipeFresco
-Crear Aplicacion para una tienda de ropa 
+Crear Aplicacion para una tienda de ropa.
