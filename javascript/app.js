@@ -12,6 +12,18 @@ document.addEventListener('DOMContentLoaded', async()=> {
     listarApi(arrayProductos, listarProductos )
 })
 
+listarProductos[0].addEventListener('click', async (e)=>{
+    const idBoton= e.target.id
+
+   if(idBoton){
+       const data = await getData(api)
+       const DetalleProducto = data.find(array =>array.id === Number(idBoton))
+       console.log(DetalleProducto)
+       localStorage.setItem('Detalle', JSON.stringify(DetalleProducto))
+       window.location.href= 'detail.html'
+   }
+})
+
 
 
 
