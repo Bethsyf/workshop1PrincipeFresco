@@ -1,1 +1,37 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><script src="https://kit.fontawesome.com/70d1ba42cb.js" crossorigin="anonymous"></script><link rel="stylesheet" href="./style/style.css"><title>Document</title><script defer="defer" src="js/app.bundle.js"></script><link href="css/app.bundle.css" rel="stylesheet"></head><body><header><nav class="menu menu_color"><img src="https://res.cloudinary.com/dzkollux2/image/upload/v1649451517/Pr%C3%ADncipe_fresco_w93lux.png" class="logo"><ul class="menu_items"><li><a href="./pages/frutas.html">Shop</a></li><li><a href="./pages/verduras.html">Collections</a></li><li><i class="fa-solid fa-bag-shopping"></i></li><li><i class="fa-regular fa-user"></i></li></ul><span class="btn_menu"><i class="fa fa-bars"></i></span></nav></header><main id="main" class="d-flex align-content-start flex-wrap w-100"><div class="list-group" id="list-group"></div></main><script src="./javascript/app.js" type="module"></script></body></html>
+Html Webpack Plugin:
+<pre>
+  Error: Parse Error: <<<<<<< HEAD:src/index.html 
+          </div>                 
+      </main> 
+  ======= 
+  
+          </div>                 
+       </main> 
+  >>>>>>> 474c1394fe2de844d8fc1d7071c274e8c55fe1e7:index.html 
+  
+  <footer> 
+      <img src="https://res.cloudinary.com/dzkollux2/image/upload/v1649451517/Pr%C3%ADncipe_fresco_w93lux.png" class="logo"></img> 
+      <div class="redes"> 
+          <img src="https://res.cloudinary.com/dzkollux2/image/upload/v1649456487/Group_2_bpaipj.png"> 
+          <img src="https://res.cloudinary.com/dzkollux2/image/upload/v1649456490/Group_3_bsqlai.png"> 
+      </div> 
+  </footer> 
+      <script src="./javascript/app.js" type="module"></script> 
+  </body> 
+  </html>
+  
+  - htmlparser.js:255 HTMLParser.parse
+    [Workshop]/[html-minifier-terser]/src/htmlparser.js:255:15
+  
+  - runMicrotasks
+  
+  - task_queues:96 processTicksAndRejections
+    node:internal/process/task_queues:96:5
+  
+  - htmlminifier.js:1282 async minify
+    [Workshop]/[html-minifier-terser]/src/htmlminifier.js:1282:3
+  
+  - htmlminifier.js:1365 async Object.exports.minify
+    [Workshop]/[html-minifier-terser]/src/htmlminifier.js:1365:16
+  
+</pre>
