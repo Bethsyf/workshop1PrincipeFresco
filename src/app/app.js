@@ -1,5 +1,7 @@
-import { getData } from "./getData.js";
-import listarApi from "./showData.js"
+import { getData } from "../javascript/getData.js";
+import listarApi from "../javascript/showData.js";
+import "../style/style.css";
+
 
 const api = 'https://api-worlshop-f10.herokuapp.com/prendas'
 
@@ -20,7 +22,7 @@ listarProductos[0].addEventListener('click', async (e)=>{
        const DetalleProducto = data.find(array =>array.id === Number(idBoton))
        console.log(DetalleProducto)
        localStorage.setItem('Detalle', JSON.stringify(DetalleProducto))
-       window.location.href= 'detail.html'
+       window.location.href= "../pages/detail.html" 
    }
 })
 
