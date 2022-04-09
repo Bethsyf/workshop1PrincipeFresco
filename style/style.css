@@ -163,3 +163,18 @@ footer{
     margin: 2rem auto;
 
 }
+main{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-img-top{
+    width: 16rem;
+}
+
+.card{
+    padding: 10%;
+    position: relative;
+
+/* Fin de estilos Header */
