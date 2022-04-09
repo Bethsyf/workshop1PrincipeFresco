@@ -20,7 +20,7 @@ listarProductos[0].addEventListener('click', async (e)=>{
        const DetalleProducto = data.find(array =>array.id === Number(idBoton))
        console.log(DetalleProducto)
        localStorage.setItem('Detalle', JSON.stringify(DetalleProducto))
-       window.location.href= 'detail.html'
+       window.location.href= 'detail.html' 
    }
 })
 
