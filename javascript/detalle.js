@@ -1,3 +1,15 @@
+window.onload = function () {
+    let btn_menu = document.querySelector('.btn_menu')
+    if (btn_menu) {
+        btn_menu.addEventListener('click', () => {
+            let menu_items = document.querySelector('.menu_items')
+            let menu_color = document.querySelector('.menu_color')
+            menu_color.classList.toggle('hidden')
+            menu_items.classList.toggle('show')//Si el elemento tiene la clase se la va a quitar, de lo contrario la agrega
+        })
+    }
+}
+
 const listar = document.getElementById('list-group')
 
 const traerLocalStorage =()=>{
@@ -8,7 +20,7 @@ const traerLocalStorage =()=>{
        listar.innerHTML +=`
        <div class="contenedorP">
        <div class="card" >
-        <img src=${img} class="card-img-top d-flex justify-content-center" alt="...">
+        <img src=${img} class="card-img-top d-flex justify-content-center img-detalle" alt="...">
         <div class="card-body">
             <h5 class="card-title">${prenda}</h5>      
         </div>
