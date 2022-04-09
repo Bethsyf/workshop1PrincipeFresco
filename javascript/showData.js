@@ -7,6 +7,7 @@ const listarApi = async (arrayproductos, pintarHTML) => {
     <div class="card">
     <h3 class="card-title">${prenda}</h3>
     <img src="${img}" class="card-img-top" alt="...">
+    <a id=${id} class="btnDetalle btn-primary">Detalle</a>
 <div class="card-body">
 </div>
 </div>  
