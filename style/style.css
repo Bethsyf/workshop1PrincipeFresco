@@ -148,13 +148,13 @@ ul.show{
 }
 
 main{
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .card-img-top{
-    width: 16rem;
+    width: 18rem;
 }
 
 .card{
